@@ -1,0 +1,91 @@
+*   {
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    display: block;
+    align-items: center;
+    justify-content: center;
+    padding: 22px;
+    background-color: rgb(224, 175, 110);
+    color: rgb(247, 242, 234);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+
+.sele .submit{
+    display: inline-block;
+}
+
+
+section{
+    display: block;
+    align-items: center;
+    justify-content: center;
+    height: 55%;
+}
+
+form{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+fieldset{
+    display: flex;
+    flex-direction: column;
+}
+
+body{
+    display: block;
+    margin: auto;
+    padding: auto;
+    align-items: center;
+    text-align: center;
+    font-size: 22px;
+    position:relative;
+    top: 18%;
+    width:700px;
+    height:auto;
+}
+
+select, form input, form textarea{
+    outline: unset;
+    padding: 8px;
+    border-radius: 5px;
+    width: 300px;
+    margin: 10px;
+}
+
+
+label{
+    font-size: 26px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+p label{
+    color: rgb(84, 219, 21);
+}
+
+p textarea{
+    font: 400;
+    font-size: 18px;
+    color: rgb(49, 110, 14);
+}
+
+fieldset{
+  width:auto;
+  height:auto;
+}
+
+.submit{
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    width: 100px;
+    height: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+}

@@ -1,8 +1,21 @@
-<?php
-// require "teste.php";
+<!--  -->
+<!-- // require "teste.php";
+// página index
 
-//página index
-?>
+// require '../includess/funcoes-ruy.php';
+// require '../includess/conecta-ruy.php';
+
+// Capturar o parâmetro id da URL
+// $id = filter_input(INPUT_GET, 'id', FILTER_SANITIZE_NUMBER_INT);
+
+
+// Chamamos a função que irá retornar o email institucional
+// $email = lerUmEmail($conexao,$id,$email);
+
+
+// Detectando o acionamento do botão entrar
+// ?> -->
+
 
 
 <!DOCTYPE html>
@@ -33,12 +46,11 @@
                         <hr>
 
                         <ol>
-                            <li>
-                                Usuário digita seu e-mail institucional, que já deverá estar no BD.
-                            </li>
+                            <li> Usuário digita seu e-mail institucional, que já deverá estar no BD. </li>
+                            <li> Comando SQL selectUsuário. </li>
                         </ol>
                         <hr>
-
+                       
                         <p><label for="senha">Digite sua Senha:</label></p>
                         <p><input type="password" name="senha" id="senha" placeholder="Digite uma senha"></p>
                         
@@ -49,7 +61,7 @@
                         </ol>
                         <hr>
  
-                        <p><button class="submit" type="submit" name="cadastrar"><a href="login-cadastro4.php">Entrar no Sistema</a></button></p>
+                        <p><button class="submit" type="submit" name="entrar"><a href="login-cadastro4.php">Entrar no Sistema</a></button></p>
                    
                         <ol>
                             <li>

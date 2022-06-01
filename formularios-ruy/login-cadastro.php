@@ -1,10 +1,10 @@
 
 <?php
 // require "projeto/cadastro-ruy/formularios-ruy/includes-ruy/funcoes-ruy.php";
-require "../includes-ruy/funcoes-ruy.php";
+// require "../includes-ruy/funcoes-ruy.php";
 
-$listaEmails = lerEmail($conexao);
-// $listasenha = lerSenha($conexao);
+// $listaEmails = lerEmail($conexao);
+// // $listasenha = lerSenha($conexao);
 ?>
 
 <!DOCTYPE html>
@@ -55,23 +55,7 @@ $listaEmails = lerEmail($conexao);
                         <!-- <form action="processa2.php" method="POST"> -->
         
                         <p><label for="email">E-mail Institucional:</label></p>
-                        
-                        <?php
-                            
-                            foreach($listaEmails as $emailLi){?>
-                     
-                        <p><input type="email" name="email" id="email" placeholder="Buscar Email Institucional">
 
-                                <p> testando <?=$emailLi['email_institucional']?> </p>
-
-                                <a href="login-cadastro.php?id=<?=$emailLi["id"]?>">Este é o ID</a> 
-
-                        <?php
-                        }
-                        ?>
-                    
-                    
-                        </p>
                             
                         <br>
                         
@@ -89,21 +73,6 @@ $listaEmails = lerEmail($conexao);
 </html>
 
 
-<?php 
 
-foreach( $listaDeFabricantes as $fabricante ){ ?>        
-            <tr>
-                <td> <?=$fabricante["nome"]?> </td>
-                <td> 
-<a href="atualizar.php?id=<?=$fabricante["id"]?>">Atualizar</a> 
-- <a href="excluir.php?id=<?=$fabricante["id"]?>">Excluir</a>
-                </td>
-            </tr> 
-<?php
-
-} 
-
-require "../includes/desconecta.php"; // opcional
-?>
 
 
