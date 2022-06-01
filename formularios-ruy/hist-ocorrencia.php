@@ -7,7 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style-form.css">
     <title>Histórico de Equipamentos de Tecnologia </title>
-<script type="text/javascript" src="http://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=XUXKf3p365oV2DtZ4ZvoMCni5VZFUSa5lokm-gzUeuwQ3tcmY1hD73feM_FTjCq0yvYt6_P79FgXNqrvdzb2dM9JJlHQT-oBVp3G3JV_l68" charset="UTF-8"></script></head>
+    
+</head>
 
 
 <body>

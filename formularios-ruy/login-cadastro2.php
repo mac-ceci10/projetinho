@@ -1,5 +1,12 @@
 <?php
-// require "teste.php";
+
+require "../includess/funcoes-ruy.php";
+require "../includess/conecta-ruy.php";
+
+$email = $_POST['email_instit'];
+$emailsIns = lerEmails($conexao, $id, $email);
+// var_dump($emailsIns);
+
 ?>
 
 <!DOCTYPE html>
@@ -12,21 +19,23 @@
     <title>Histórico de Equipamentos de Tecnologia </title>
 <script type="text/javascript" src="http://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=SixkPse1gFAysQ62izJ1t3cSV8bZUsEiHF33sfGV-tnTm82Z0HRztAGsWylSaSMfa6Z9qRTEsf9jq6zh7Y1VnXvmvN1P9K45Eme2UQWZL2Q" charset="UTF-8"></script></head>
 
+
 <body>
     <header>
     <h1>Sistema de Registro -  Equipamentos de tecnologia</h1>
         <br>
         <hr>
-
         <h2>Digite seu e-mail Institucional para logar</h2> 
         </header>    
             <section id="corpo-form">
                     <fieldset>
-                        <form class="center" method="POST" action="teste1.php" action="funcoes-ruy.php">
+                        <form class="center" method="POST" action="teste1.php">
         
                         <p><label for="email">E-mail Institucional:</label></p>
-                        <p><input type="text" name="email_instit" id="email"  placeholder="Digite seu e-mail Institucional"></p>
-                        
+                        <p><input type="email" name="email_instit" id="email"  placeholder="Digite seu e-mail Institucional"></p>
+                                              
+                          <p>  Buscar o email_institucional cadastrado </p>
+
                         <hr>
                         <ol>
                             <li>
@@ -37,10 +46,10 @@
                                 O retorno será tratado com a condicional "if": <br>
                                 <ul>
                                     <li>
-                                    Se encontrado, mostra a página de acesso ao cadastro de uma senha para se logar.
+                                    Se encontrado, mostra a página de acesso para cadastro de uma senha de acesso (para se logar).
                                     </li>
                                     <li>
-                                    Se NÃO encontrado, mostra página de "ERRO" possíveis sugestões.
+                                    Se NÃO encontrado, mostra página de "ERRO" e possíveis sugestões.
                                     </li>
                                 </ul>
                                     
@@ -50,20 +59,20 @@
  
                         <p><button class="submit" type="submit" name="buscar">
                             
-                        <!-- <a href="login-cadastro3.php">Buscar e-mail</a> -->
-                        <!-- <a href="teste.php"> -->
-                            Buscar e-mail</a> </button></p>
+                        <a href="login-cadastro3.php">Buscar e-mail</a>
+                        
+                        <a href="teste1.php"> Buscar e-mail</a> </button></p>
 
                             <?php
                         // Detectando o acionamento do botão atualizar
-                        if( isset($_POST['buscar']) ){
-                            $buscEmail = filter_input(INPUT_POST, 'email_instit', FILTER_SANITIZE_SPECIAL_CHARS);
+                        // if( isset($_POST['buscar']) ){
+                        //     $buscEmail = filter_input(INPUT_POST, 'email_instit', FILTER_SANITIZE_SPECIAL_CHARS);
 
-                            echo $buscEmail;
+                        //     echo $buscEmail;
                             // var_dump($buscEmail);
                             // atualiza($conexao, $id, $nome);
                             // header("location:login-cadastro3.php");
-                        }
+                        
                         ?>
                     </fieldset>
                 </section>               
